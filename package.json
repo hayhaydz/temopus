@@ -13,8 +13,12 @@
   },
   "dependencies": {
     "gatsby": "^2.23.12",
+    "gatsby-plugin-sass": "^2.3.12",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "typeface-biorhyme-expanded": "^0.0.71",
+    "typeface-martel": "^0.0.72",
+    "typeface-poppins": "^0.0.72"
   },
   "devDependencies": {
     "prettier": "2.0.5"
