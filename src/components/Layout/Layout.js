@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../styles/main.scss';
 
-const Layout = ({ chlidren }) => {
+const Layout = ({ children }) => {
     return (
         <main className="Layout">
-            {chlidren}
+            {children}
         </main>
     )
 }
