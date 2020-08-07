@@ -14,7 +14,10 @@
   "dependencies": {
     "gatsby": "^2.23.12",
     "gatsby-plugin-anchor-links": "^1.1.1",
+    "gatsby-plugin-netlify-cms": "^4.3.11",
     "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-source-filesystem": "^2.3.24",
+    "netlify-cms-app": "^2.12.19",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
