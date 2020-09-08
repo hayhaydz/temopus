@@ -9,7 +9,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="Header" >
+        <header className="Header" id="root">
             <Icon open={open} setOpen={setOpen} />
             <Navigation open={open} setOpen={setOpen} />
             <Link to={`/`} className="Header__logo"><img src={Logo} alt="Temopus written in text with the o being displayed as a clock." className="Header__logo--img"/></Link>

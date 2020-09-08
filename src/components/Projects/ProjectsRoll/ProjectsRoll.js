@@ -31,7 +31,6 @@ const ProjectsRoll = () => {
                 }
             `}
             render={data => {
-                console.log(data);
                 const projects = data.allMarkdownRemark.edges
                 return (
                     <div className="ProjectsRoll">
