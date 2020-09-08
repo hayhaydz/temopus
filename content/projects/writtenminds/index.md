@@ -6,7 +6,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
   luctus elit tristique. Cras turpis lacus, dignissim vitae felis eu, finibus
   molestie tellus.
 date: 2020-09-08T09:35:22.726Z
-featured-image: colors-rainbow-counting-numbers-nature.jpg
+featured-image: hands-working.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue pellentesque mattis. Morbi commodo eros vel purus malesuada, fringilla luctus elit tristique. Cras turpis lacus, dignissim vitae felis eu, finibus molestie tellus. Cras nec luctus nisi. Nam feugiat vestibulum massa, sed imperdiet dui congue eget. In fringilla turpis sit amet urna sodales euismod. Pellentesque porttitor, dolor quis commodo lacinia, tortor mauris finibus orci, in semper dui magna sit amet nunc. Mauris luctus hendrerit magna eget fermentum. In laoreet turpis eget diam placerat cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Sed condimentum, quam a luctus tempus, diam felis pulvinar nisi, in vulputate neque mi efficitur dolor. Fusce in odio ac dolor euismod posuere. Duis et lacus leo.
 
