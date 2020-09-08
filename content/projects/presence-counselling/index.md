@@ -1,4 +1,5 @@
 ---
+templateKey: project-post
 title: Presence Counselling
 description: A landing page for a counselling business. Focused on creating a
   soft and welcoming environment for any visiting users.
