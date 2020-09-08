@@ -330,9 +330,37 @@ html, body {
 // About
 .About {
     margin-top: 150px;
+
+    &__details {
+        max-width: 50%;
+
+        &--subtitle {
+            font-size: 32px;
+            font-weight: 500;
+            color: #121212;
+            margin: 0px;
+            margin-bottom: 10px;
+            line-height: 1.2em;
+        }
+
+        &--detail {
+            font-size: 24px;
+            color: #2E2E2E;
+            margin-bottom: 25px;
+            line-height: 1.2em;
+        }
+
+        &--desc {
+            font-size: 18px;
+            font-weight: 500;
+            color: #2E2E2E;
+            line-height: 1.2em;
+            margin-top: 50px;
+        }
+    }
 }
 
 // Contact
 .Contact {
-
+    margin-top: 150px;
 }
