@@ -171,3 +171,88 @@ html, body {
         }
     }
 }
+
+// Projects
+.Projects {
+    margin: 150px 0px;
+    
+    &__heading {
+        font-size: 48px;
+        font-weight: 700;
+        color: #121212;
+        max-width: 40%;
+        margin: 0px;
+        margin-bottom: 35px;
+        line-height: 1.4em;
+    }
+}
+
+.ProjectsRoll {
+    &__project {
+        position: relative;
+        display: flex;
+        max-width: 65%;
+        margin: auto;
+        margin-bottom: 150px;
+
+        &--date {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-family: 'BioRhyme Expanded', serif;
+            font-size: 24px;
+            font-weight: 800;
+            transform: rotate(-90deg) translate(-100%, 100%);
+            transform-origin: 0px;
+        }
+
+        &--img {
+            width: 400px;
+            height: 400px;
+            flex-shrink: 0;
+            margin-left: 50px;
+            box-sizing: border-box;
+            border: 10px solid #000000;
+        }
+
+        &--container {
+            margin-left: 20px;
+
+            &--title {
+                font-size: 38px;
+                font-weight: 700;
+                color: #121212;
+                line-height: 1.2em;
+                margin: 0px;
+                margin-bottom: 25px;
+            }
+
+            &--desc {
+                font-size: 18px;
+                font-weight: 500;
+                color: #2E2E2E;
+                line-height: 1.2em;
+                margin-bottom: 15px;
+            }
+
+            &--link {
+                display: block;
+                font-size: 18px;
+                font-weight: 600;
+                color: #121212;
+                text-align: center;
+                text-decoration: none;
+                padding: 1em;
+                box-sizing: border-box;
+                border: 5px solid #121212;
+                transition: 200ms ease;
+
+                &:hover, &:focus {
+                    background-color: #2E2E2E;
+                    border-color: #2E2E2E;
+                    color: #F9F3E9;
+                }
+            }
+        }
+    }
+}
