@@ -7,7 +7,7 @@ const ProjectsRoll = () => {
         <StaticQuery 
             query={graphql`
                 query {
-                    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/projects/"}}, sort: {fields: [frontmatter___date], order: DESC}) {
+                    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/projects/"}}, sort: {fields: [frontmatter___date], order: DESC}, limit: 3) {
                         edges {
                             node {
                                 fields {

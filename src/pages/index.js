@@ -8,7 +8,7 @@ import About from '../components/About/About'
 import Contact from '../components/Contact/Contact'
 
 const Home = () => {
-  const [budget, setBudget] = useState(0);
+  const [budget, setBudget] = useState("Budget");
 
   return (
     <Layout>
@@ -16,7 +16,7 @@ const Home = () => {
       <Projects />
       <Cost setBudget={setBudget} />
       <About />
-      <Contact budget={budget} />
+      <Contact budget={budget} setBudget={setBudget} />
     </Layout>
   )
 }

@@ -354,7 +354,7 @@ html, body {
             font-size: 18px;
             font-weight: 500;
             color: #2E2E2E;
-            line-height: 1.2em;
+            line-height: 1.6em;
             margin-top: 50px;
         }
     }
@@ -363,4 +363,8 @@ html, body {
 // Contact
 .Contact {
     margin-top: 150px;
+
+    &__form {
+        display: flex;
+    }
 }
