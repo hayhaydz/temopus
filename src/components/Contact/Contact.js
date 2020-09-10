@@ -1,12 +1,10 @@
+/* eslint-disable */
 import React from 'react'
 
 const Contact = ({ budget, setBudget }) => {
-
     const handleChange = (event) => {
-        console.log(event.target);
-        // setBudget("")
+        setBudget(event.target.value)
     }
-    console.log(budget);
     return (
         <section className="Contact" id="contact">
             <h1 className="Contact__heading heading">Get in contact.</h1>
@@ -19,13 +17,15 @@ const Contact = ({ budget, setBudget }) => {
                 </div>
                 <div className="Contact__form--row">
                     <input type="text" className="Contact__form--input" name="Subject" placeholder="Subject" />
-                    <select name="Budget" value={budget} className="Contact__form--select" onBlur={handleChange} required>
+                    <select name="Budget" value={budget} className="Contact__form--input Contact__form--select" onChange={handleChange} required>
                         <option value="Budget">Budget</option>
                         <option value="£250+">£250+</option>
                         <option value="£500+">£500+</option>
                         <option value="£999+">£999+</option>
                     </select>
                 </div>
+                <textarea name="Message" className="Contact__form--input Contact__form--textarea" placeholder="Message"></textarea>
+                <button type="submit" className="Contact__form--btn">Send</button>
             </form>
         </section>
     )
