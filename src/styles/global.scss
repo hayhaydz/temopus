@@ -409,6 +409,27 @@ html, body {
             border: none;
             padding: 1em;
             text-transform: uppercase;
+            cursor: pointer;
+            transition: 200ms ease;
+
+            &:hover, &:focus {
+                background-color: #2E2E2E;
+            }
         }
+    }
+}
+
+// Footer
+.Footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    margin-top: 150px;
+
+    &__copright {
+        font-size: 16px;
+        font-weight: 600;
+        color: #454545;
     }
 }
