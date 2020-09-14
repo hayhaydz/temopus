@@ -8,6 +8,12 @@ import Logo from '../../img/logo.svg'
 const Header = () => {
     const [open, setOpen] = useState(false);
 
+    if(open) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'unset';
+    }
+
     return (
         <header className="Header" id="root">
             <Icon open={open} setOpen={setOpen} />

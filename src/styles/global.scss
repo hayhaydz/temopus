@@ -8,6 +8,17 @@ html, body {
     margin: 0px 100px;
 }
 
+// Custom Scrollbar
+::-webkit-scrollbar {
+    background-color: #F9F3E9;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #121212;
+    border: none;
+}
+
 // Header
 
 .Header {
@@ -431,5 +442,70 @@ html, body {
         font-size: 16px;
         font-weight: 600;
         color: #454545;
+    }
+}
+
+.ProjectsFeed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+    &__link {
+
+        &--project {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            &--title {
+                position: absolute;
+                z-index: 10;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                font-weight: 600;
+                color: #F9F3E9;
+                margin: 0px;
+                text-align: center;
+                line-height: 1.2em;
+                opacity: 0;
+                transition: 200ms ease;
+            }
+
+            &--img {
+                height: 100%;
+                width: 100%;
+                box-sizing: border-box;
+                border: 10px solid #121212;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    opacity: 0;
+                    transition: 200ms ease;
+                }
+            }
+        }
+
+        &:hover, &:focus{
+            .ProjectsFeed__link--project {
+                &--title {
+                    opacity: 1;
+                }
+
+                &--img {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }
