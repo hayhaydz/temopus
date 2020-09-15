@@ -509,3 +509,42 @@ html, body {
         }
     }
 }
+
+.ProjectPost {
+
+    &__smalltitle {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: #494949;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__date {
+        font-size: 22px;
+        font-weight: 500;
+        color: #2E2E2E;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        font-size: 20px;
+        font-weight: 500;
+        color: #2E2E2E;
+        margin-bottom: 100px;
+        max-width: 40%;
+        line-height: 1.2em;
+    }
+
+    &__content {
+        font-size: 18px;
+        max-width: 85%;
+        margin: auto;
+        line-height: 1.4em;
+    }
+}
