@@ -7,12 +7,13 @@ import Navigation from './Navigation/Navigation'
 import Logo from '../../img/logo.svg'
 
 const Header = () => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false)
+    const body = document.querySelector('body')
 
     if(open) {
-        document.body.style.overflow = 'hidden';
+        body.classList.add("noScrolling")
     } else {
-        document.body.style.overflow = 'unset';
+        body.classList.remove("noScrolling")
     }
 
     return (
