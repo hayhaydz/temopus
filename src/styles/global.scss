@@ -5,7 +5,6 @@ html, body {
 
     &.noScrolling {
         overflow: hidden;
-        padding-right: 10px;
     }
 }
 
@@ -207,9 +206,13 @@ html, body {
     &__project {
         position: relative;
         display: flex;
-        max-width: 65%;
+        max-width: 80%;
         margin: auto;
         margin-bottom: 150px;
+
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
 
         &--date {
             position: absolute;
@@ -282,6 +285,7 @@ html, body {
 .Pricing {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     &__container {
         display: flex;
@@ -294,6 +298,7 @@ html, body {
         border: 10px solid #121212;
         margin-right: 20px;
         color: #121212;
+        max-width: 400px;
 
         &--primary {
             color: #FAFAFA;
@@ -551,5 +556,272 @@ html, body {
         max-width: 85%;
         margin: auto;
         line-height: 1.4em;
+    }
+}
+
+// Media Queries
+@media(max-width: 1450px) {
+    .Pricing {
+        &__container {
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .Landing {
+        &__headings {
+            font-size: 52px;
+            line-height: 1.6em;
+        }
+
+        &__subheading {
+            max-width: 100%;
+        }
+
+        &__paragraph {
+            max-width: 80%;
+        }
+
+        &__buttons {
+            max-width: 80%;
+        }
+    }
+
+    .heading {
+        max-width: 80%;
+    }
+
+    .ProjectsRoll {
+        &__project {
+            max-width: 100%;
+        }
+    }
+
+    .About {
+        &__details {
+            max-width: 80%;
+        }
+    }
+
+    .ProjectPost {
+        &__desc {
+            max-width: 80%;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .Layout {
+        margin: 0px 50px;
+    }
+}
+
+@media(max-width: 800px) {
+    .ProjectsRoll {
+        &__project {
+            flex-direction: column;
+            align-items: center;
+
+            &--date {
+                position: relative;
+                transform: translate(0, 0);
+                margin-bottom: 15px;
+            }
+
+            &--img {
+                margin-left: 0px;
+            }
+
+            &--container {
+                margin-left: 0px;
+                margin-top: 35px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .Contact {
+        &__form {
+            &--row {
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 20px;
+            }
+        }
+    }
+
+    .ProjectsFeed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 550px) {
+    .Layout {
+        margin: 0px 20px;
+    }
+
+    .Header {
+        &__logo {
+            &--img {
+                height: 25px;
+            }
+        }
+    }
+
+    .Landing {
+        &__headings {
+            font-size: 42px;
+        }
+
+        &__heading {
+            margin-top: 50px;
+        }
+
+        &__paragraph {
+            font-size: 18px;
+            max-width: 100%;
+        }
+
+        &__buttons {
+            max-width: 100%;
+            margin-top: 25px;
+        }
+    }
+
+    .heading {
+        max-width: 100%;
+        font-size: 38px;
+    }
+
+    .About {
+        &__details {
+            max-width: 100%;
+        }
+    }
+
+    .ProjectsFeed {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .ProjectPost {
+        &__desc {
+            font-size: 18px;
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+
+        &__content {
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .Landing {
+        &__buttons {
+            flex-direction: column;
+
+            &--btn {
+                margin: 0px;
+
+                &:first-of-type {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .Projects {
+        margin-top: 100px;
+    }
+
+    .ProjectsRoll {
+        &__project {
+            align-items: flex-start;
+            max-width: 350px;
+            margin-bottom: 50px;
+
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+            
+
+            &--img {
+                width: 350px;
+                height: 350px;
+            }
+
+            &--container {
+                text-align: left;
+            }
+        }
+    }
+
+    .Cost {
+        margin-top: 100px;
+    }
+
+    .About {
+        margin-top: 100px;
+    }
+
+    .Contact {
+        margin-top: 100px;
+    }
+
+    .Footer {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 400px) {
+    .Landing {
+        &__headings {
+            font-size: 34px;
+        }
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .ProjectsRoll {
+        &__project {
+            max-width: 270px;
+
+            &--img {
+                width: 270px;
+                height: 270px;
+            }
+        }
+    }
+
+    .Pricing {
+        &__container {
+            height: 500px;
+
+            &--price {
+                font-size: 42px;
+            }
+        }
+    }
+
+    .About {
+        &__details {
+            &--desc {
+                font-size: 16px;
+                line-height: 1.4em;
+            }
+        }
+    }
+
+    .ProjectPost {
+        &__desc {
+            font-size: 16px;
+        }
     }
 }
