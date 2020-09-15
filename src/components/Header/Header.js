@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import { document } from 'browser-monads'
 
 import Icon from './Icon/Icon'
 import Navigation from './Navigation/Navigation'
