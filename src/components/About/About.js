@@ -27,7 +27,7 @@ const About = () => {
                             <p className="About__details--detail">2+ years</p>
                             <h3 className="About__details--subtitle">Projects Developed</h3>
                             <p className="About__details--detail">{projects.length}</p>
-                            <p className="About__details--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus malesuada dignissim convallis aliquam tellus convallis at. Fringilla suspendisse ipsum tristique pretium, non sit. Dui senectus interdum rhoncus non. Interdum aliquet erat habitant nunc, tellus, phasellus magna pellentesque praesent. Fringilla in egestas aliquet posuere etiam quis. Neque sed commodo commodo at. Vel vulputate eu in etiam tortor, elit ultrices. Porta est consectetur phasellus ipsum enim diam rutrum urna. Lacus, in tempor, egestas donec sed.</p>
+                            <p className="About__details--desc">An independent design agency based out of Wells in the rural countryside of Somerset. Offering a new and afforable oppurtunity to businesses looking to reach new audiences. We take care with each and every project that we work on and ensure that each one is unique and bespoke to it’s services. We develop our projects with cutting edge web technologies to provide the most up-to-date experience for our clients customers. We strive to provide more for less, focusing on the most integral parts of your business and presenting that to the world.</p>
                         </div>
                     </section>
                 )

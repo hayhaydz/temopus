@@ -1,4 +1,12 @@
 module.exports = {
+  siteMetadata: {
+    title: "Home",
+    titleTemplate: " // Temopus // Bringing the past into the future. // Wells, Somerset",
+    description: "Focussed on creating the best experience for our clients and their customers. Using modern technlogies to provide an enjoyable and unique experience to our users. Based in Somerset. Built in Somerset.",
+    url: "https://temopus.digital",
+    siteUrl: "https://temopus.digital",
+    // image: "/social_image.jpg"
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-anchor-links`,
