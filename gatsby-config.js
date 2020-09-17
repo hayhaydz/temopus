@@ -17,6 +17,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-image`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-112410411-5'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Temopus`,
