@@ -5,7 +5,7 @@ import ProjectsFeed from '../components/ProjectsFeed/ProjectsFeed'
 
 const ProjectsPage = () => {
     return (
-        <Layout>
+        <Layout customTitle="Projects" >
             <section className="ProjectsPage">
                 <h1 className="ProjectsPage__heading heading">Projects</h1>
                 <ProjectsFeed />

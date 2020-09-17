@@ -559,6 +559,15 @@ html, body {
     }
 }
 
+.NotFound {
+    height: calc(100vh - 370px);
+
+    &__subheading {
+        max-width: 40%;
+        line-height: 1.4em;
+    }
+}
+
 // Media Queries
 @media(max-width: 1450px) {
     .Pricing {
@@ -655,6 +664,12 @@ html, body {
 
     .ProjectsFeed {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .NotFound {
+        &__subheading {
+            max-width: 100%;
+        }
     }
 }
 

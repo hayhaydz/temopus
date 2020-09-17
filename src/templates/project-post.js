@@ -5,7 +5,7 @@ import Layout from '../components/Layout/Layout'
 
 const ProjectPost = ({ data }) => {
     return (
-        <Layout>
+        <Layout customTitle={data.markdownRemark.frontmatter.title} customDescription={data.markdownRemark.frontmatter.description} customImgSrc={data.markdownRemark.frontmatter.featured_image.childImageSharp.fluid.src}>
             <section className="ProjectPost">
                 <span className="ProjectPost__smalltitle">Title</span>
                 <h1 className="ProjectPost__title heading">{data.markdownRemark.frontmatter.title}</h1>
@@ -27,6 +27,13 @@ export const pageQuery = graphql`
                 title
                 description
                 date(formatString: "DD/MM/YYYY")
+                featured_image {
+                    childImageSharp {
+                        fluid(maxWidth: 1200, quality: 100) {
+                            src
+                        }
+                    }
+                }
             }
             html
         }
